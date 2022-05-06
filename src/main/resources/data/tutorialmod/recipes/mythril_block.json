@@ -1,28 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "w#d",
-    "#c#",
-    "d#w"
+    "XXX",
+    "X#X",
+    "XXX"
   ],
   "key": {
     "#": {
       "item": "tutorialmod:mythril_ingot"
+    },
+    "X": {
+      "item": "minecraft:dirt"
+
     }
   },
-
-    "c": {
-      "item": "minecraft:copper_ingot"
-    },
-
-    "d": {
-      "item": "minecraft:iron_ingot"
-    },
-    "w": {
-      "item": "minecraft:gold_ingot"
-    }
-,
   "result": {
-    "item": "tutorialmod:mythril_block"
+    "item": "tutorialmod:mythril_block",
+    "count": 1
   }
 }

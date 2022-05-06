@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "w#d",
+    "#c#",
+    "d#w"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:mythril_ingot"
+    }
+  },
+
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+
+    "d": {
+      "item": "minecraft:iron_ingot"
+    },
+    "w": {
+      "item": "minecraft:gold_ingot"
+    }
+,
+  "result": {
+    "item": "tutorialmod:mythril_block"
+  }
+}

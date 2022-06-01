@@ -38,6 +38,9 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.TURTLESHELL, EquipmentSlot.FEET
                     ,new FabricItemSettings().group(ItemGroup.MISC)));
 
+    public static final Item GRASS = registerItem("grass",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC).food(ModFoodComponents.GRASS)));
+
 
     private static Item registerItem(String name, Item item){
       return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
@@ -49,4 +52,3 @@ public class ModItems {
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
     }
 }
-//moxiehaylo

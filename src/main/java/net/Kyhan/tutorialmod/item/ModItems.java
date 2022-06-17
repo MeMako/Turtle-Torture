@@ -52,3 +52,4 @@ public class ModItems {
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
     }
 }
+//add depthstrider to turtle armour and add full set effect (resistance with slowness?)

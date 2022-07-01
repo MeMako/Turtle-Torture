@@ -34,7 +34,7 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.TURTLESHELL, EquipmentSlot.LEGS
                     ,new FabricItemSettings().group(ItemGroup.MISC)));
 
-    public static final Item TURTLESHELL_BOOTS = registerItem("turtleshell_boots.json",
+    public static final Item TURTLESHELL_BOOTS = registerItem("turtleshell_boots",
             new ArmorItem(ModArmorMaterials.TURTLESHELL, EquipmentSlot.FEET
                     ,new FabricItemSettings().group(ItemGroup.MISC)));
 

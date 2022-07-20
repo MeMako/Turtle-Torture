@@ -1,6 +1,7 @@
 package net.Kyhan.tutorialmod.block;
 
 import net.Kyhan.tutorialmod.TutorialMod;
+import net.Kyhan.tutorialmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -15,7 +16,7 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
 
     public static final Block MYTHRIL_BLOCK = registerBlock("mythril_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ItemGroup.MISC);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.TurtleTorture);
 
 
 

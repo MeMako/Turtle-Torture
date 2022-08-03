@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "tutorialmod",
+  "id": "turtletorture",
   "version": "${version}",
 
-  "name": "Tutorial Mod",
+  "name": "Turtle Torture",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Kyhan!"
@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.Kyhan.tutorialmod.TutorialMod"
+      "net.Kyhan.turtletorture.TurtleTorture"
     ]
   },
   "mixins": [
-    "tutorialmod.mixins.json"
+    "turtletorture.mixins.json"
   ],
 
   "depends": {

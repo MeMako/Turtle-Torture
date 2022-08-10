@@ -40,6 +40,12 @@ public class ModItems {
     public static final Item GRASS = registerItem("grass",
             new Item(new FabricItemSettings().group(ModItemGroup.TurtleTorture).food(ModFoodComponents.GRASS)));
 
+    public static final Item TURTLEYUM = registerItem("turtleyum",
+            new Item(new FabricItemSettings().group(ModItemGroup.TurtleTorture).food(ModFoodComponents.TURTLEYUM)));
+
+    public static final Item COOKTURTLE = registerItem("cookturtle",
+            new Item(new FabricItemSettings().group(ModItemGroup.TurtleTorture).food(ModFoodComponents.COOKTURTLE)));
+
 
     private static Item registerItem(String name, Item item){
       return Registry.register(Registry.ITEM, new Identifier(TurtleTorture.MOD_ID, name), item);

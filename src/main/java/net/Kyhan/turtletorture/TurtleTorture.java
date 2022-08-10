@@ -2,6 +2,7 @@ package net.Kyhan.turtletorture;
 
 import net.Kyhan.turtletorture.block.ModBlocks;
 import net.Kyhan.turtletorture.item.ModItems;
+import net.Kyhan.turtletorture.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,5 +22,6 @@ public class TurtleTorture implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModLootTableModifiers.modifyLootTables();
 	}
 }

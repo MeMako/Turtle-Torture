@@ -12,5 +12,5 @@ import net.minecraft.util.registry.Registry;
 public class ModEntities {
 
     public static final EntityType<DyingturtleEntity> DyingTurtle = Registry.register(Registry.ENTITY_TYPE, new Identifier(TurtleTorture.MOD_ID, "turtleplastic"),
-            FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, DyingturtleEntity::new).dimensions(EntityDimensions.fixed(6, 20)).build());
+            FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, DyingturtleEntity::new).dimensions(EntityDimensions.fixed(1, 1)).build());
 }

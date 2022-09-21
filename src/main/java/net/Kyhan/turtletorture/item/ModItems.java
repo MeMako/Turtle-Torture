@@ -1,10 +1,12 @@
 package net.Kyhan.turtletorture.item;
 
 import net.Kyhan.turtletorture.TurtleTorture;
+import net.Kyhan.turtletorture.entity.ModEntities;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -46,7 +48,9 @@ public class ModItems {
     public static final Item COOKTURTLE = registerItem("cookturtle",
             new Item(new FabricItemSettings().group(ModItemGroup.TurtleTorture).food(ModFoodComponents.COOKTURTLE)));
 
-
+    public static final Item PLASTICTURTLE_SPAWN_EGG = registerItem("plasticturtle_spawn_egg",
+            new SpawnEggItem(ModEntities.DyingTurtle, 006400, 808080,
+                    new FabricItemSettings().group(ModItemGroup.TurtleTorture).maxCount(256)));
     private static Item registerItem(String name, Item item){
       return Registry.register(Registry.ITEM, new Identifier(TurtleTorture.MOD_ID, name), item);
 

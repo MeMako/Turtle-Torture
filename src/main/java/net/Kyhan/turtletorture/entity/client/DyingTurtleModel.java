@@ -11,7 +11,7 @@ import software.bernie.geckolib3.model.provider.data.EntityModelData;
 public class DyingTurtleModel extends AnimatedGeoModel<DyingturtleEntity> {
     @Override
     public Identifier getModelLocation(DyingturtleEntity object) {
-        return new Identifier(TurtleTorture.MOD_ID, "geo/TurtlePlastic.geo.json");
+        return new Identifier(TurtleTorture.MOD_ID, "geo/turtleplastic.geo.json");
     }
 
     @Override

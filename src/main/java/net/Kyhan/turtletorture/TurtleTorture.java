@@ -10,6 +10,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib3.GeckoLib;
 
 public class TurtleTorture implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -28,5 +29,6 @@ public class TurtleTorture implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModLootTableModifiers.modifyLootTables();
 		ModRegistries.registerModStuffs();
+		GeckoLib.initialize();
 	}
 }

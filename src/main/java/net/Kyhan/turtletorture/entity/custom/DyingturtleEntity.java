@@ -1,12 +1,21 @@
 package net.Kyhan.turtletorture.entity.custom;
 
+import net.minecraft.client.sound.AggressiveBeeSoundInstance;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.entity.MovementType;
+import net.minecraft.entity.ai.pathing.SwimNavigation;
+import net.minecraft.entity.ai.goal.WanderAroundGoal;
+import net.minecraft.entity.ai.NoPenaltyTargeting;
+import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
+import net.minecraft.entity.passive.TurtleEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
@@ -49,6 +58,7 @@ public class DyingturtleEntity extends AnimalEntity implements IAnimatable {
         this.goalSelector.add(2, new WanderAroundPointOfInterestGoal(this, 0.75f, false));
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.75f, 1));
         this.goalSelector.add(4, new LookAroundGoal(this));
+        this.goalSelector.add(3, new TurtleEntity.WanderInWaterGoal(this, 1.0));
         this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
     }
 
@@ -75,4 +85,8 @@ public class DyingturtleEntity extends AnimalEntity implements IAnimatable {
 
     @Override
 protected SoundEvent getHurtSound(DamageSource source) { return SoundEvents.ENTITY_TURTLE_HURT; }
+
+    public boolean isPushedByFluids() {return false;}
+
+
     }

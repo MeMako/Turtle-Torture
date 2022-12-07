@@ -1,5 +1,5 @@
-[17:22:02] [main/INFO]: Loading Minecraft 1.18.2 with Fabric Loader 0.13.3
-[17:22:02] [main/INFO]: Loading 38 mods:
+[17:27:02] [main/INFO]: Loading Minecraft 1.18.2 with Fabric Loader 0.13.3
+[17:27:02] [main/INFO]: Loading 38 mods:
 	- com_eliotlash_mclib_mclib 18 via geckolib3
 	- com_eliotlash_molang_molang 18 via geckolib3
 	- fabric 0.48.0+1.18.2
@@ -38,11 +38,11 @@
 	- java 17
 	- minecraft 1.18.2
 	- turtletorture 0.0.2-1.18.2
-[17:22:02] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/kyhan/Documents/Github/Projects/Turtle-Torture/server/libraries/net/fabricmc/sponge-mixin/0.11.2+mixin.0.8.5/sponge-mixin-0.11.2+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
-[17:22:02] [main/INFO]: Compatibility level set to JAVA_16
-[17:22:02] [main/INFO]: Compatibility level set to JAVA_17
-[17:22:07] [main/WARN]: @Inject(@At("INVOKE")) Shift.BY=3 on fabric-lifecycle-events-v1.mixins.json:server.WorldChunkMixin::handler$zca000$onLoadBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
-[17:22:09] [main/ERROR]: Failed to start the minecraft server
+[17:27:02] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/kyhan/Documents/Github/Projects/Turtle-Torture/server/libraries/net/fabricmc/sponge-mixin/0.11.2+mixin.0.8.5/sponge-mixin-0.11.2+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[17:27:02] [main/INFO]: Compatibility level set to JAVA_16
+[17:27:02] [main/INFO]: Compatibility level set to JAVA_17
+[17:27:08] [main/WARN]: @Inject(@At("INVOKE")) Shift.BY=3 on fabric-lifecycle-events-v1.mixins.json:server.WorldChunkMixin::handler$zca000$onLoadBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[17:27:10] [main/ERROR]: Failed to start the minecraft server
 java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'turtletorture'!
 	at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.lambda$invoke0$0(EntrypointUtils.java:51) ~[fabric-loader-0.13.3.jar:?]
 	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33) ~[fabric-loader-0.13.3.jar:?]

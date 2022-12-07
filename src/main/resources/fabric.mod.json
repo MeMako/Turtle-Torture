@@ -19,7 +19,8 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.Kyhan.turtletorture.TurtleTorture"
+      "net.Kyhan.turtletorture.TurtleTorture",
+      "net.Kyhan.turtletorture.TurtleTortureServer"
     ]
   },
   "mixins": [

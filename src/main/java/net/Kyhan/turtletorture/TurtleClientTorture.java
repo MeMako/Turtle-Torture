@@ -17,13 +17,8 @@ public class TurtleClientTorture implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        EntityRendererRegistry.register(ModEntities.DyingTurtle, DyingTurtleRenderer::new);
-        ModItems.registerModItems();
-        ModBlocks.registerModBlocks();
-        ModWorldGen.generateModWorldGen();
-        ModLootTableModifiers.modifyLootTables();
-        ModRegistries.registerModStuffs();
-        GeckoLib.initialize();
+
+
 
     }
 

@@ -16,6 +16,7 @@ import software.bernie.geckolib3.GeckoLib;
 public class TurtleClientTorture implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        EntityRendererRegistry.register(ModEntities.DyingTurtle, DyingTurtleRenderer::new);
 
 
 

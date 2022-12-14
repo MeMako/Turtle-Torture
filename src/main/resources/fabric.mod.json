@@ -19,9 +19,12 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.Kyhan.turtletorture.TurtleTorture",
-      "net.Kyhan.turtletorture.TurtleTortureServer"
+      "net.Kyhan.turtletorture.TurtleTorture"
+    ],
+    "client": [
+      "net.Kyhan.turtletorture.TurtleClientTorture"
     ]
+
   },
   "mixins": [
     "turtletorture.mixins.json"

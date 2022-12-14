@@ -1,5 +1,5 @@
-[17:27:02] [main/INFO]: Loading Minecraft 1.18.2 with Fabric Loader 0.13.3
-[17:27:02] [main/INFO]: Loading 38 mods:
+[17:51:46] [main/INFO]: Loading Minecraft 1.18.2 with Fabric Loader 0.13.3
+[17:51:46] [main/INFO]: Loading 38 mods:
 	- com_eliotlash_mclib_mclib 18 via geckolib3
 	- com_eliotlash_molang_molang 18 via geckolib3
 	- fabric 0.48.0+1.18.2
@@ -38,11 +38,11 @@
 	- java 17
 	- minecraft 1.18.2
 	- turtletorture 0.0.2-1.18.2
-[17:27:02] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/kyhan/Documents/Github/Projects/Turtle-Torture/server/libraries/net/fabricmc/sponge-mixin/0.11.2+mixin.0.8.5/sponge-mixin-0.11.2+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
-[17:27:02] [main/INFO]: Compatibility level set to JAVA_16
-[17:27:02] [main/INFO]: Compatibility level set to JAVA_17
-[17:27:08] [main/WARN]: @Inject(@At("INVOKE")) Shift.BY=3 on fabric-lifecycle-events-v1.mixins.json:server.WorldChunkMixin::handler$zca000$onLoadBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
-[17:27:10] [main/ERROR]: Failed to start the minecraft server
+[17:51:47] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/kyhan/Documents/Github/Projects/Turtle-Torture/server/libraries/net/fabricmc/sponge-mixin/0.11.2+mixin.0.8.5/sponge-mixin-0.11.2+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[17:51:47] [main/INFO]: Compatibility level set to JAVA_16
+[17:51:47] [main/INFO]: Compatibility level set to JAVA_17
+[17:51:52] [main/WARN]: @Inject(@At("INVOKE")) Shift.BY=3 on fabric-lifecycle-events-v1.mixins.json:server.WorldChunkMixin::handler$zca000$onLoadBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[17:51:54] [main/ERROR]: Failed to start the minecraft server
 java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'turtletorture'!
 	at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.lambda$invoke0$0(EntrypointUtils.java:51) ~[fabric-loader-0.13.3.jar:?]
 	at net.fabricmc.loader.impl.util.ExceptionUtil.gatherExceptions(ExceptionUtil.java:33) ~[fabric-loader-0.13.3.jar:?]
@@ -62,8 +62,31 @@ java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to err
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
 	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:66) [fabric-loader-0.13.3.jar:?]
+	Suppressed: net.fabricmc.loader.api.EntrypointException: Exception while loading entries for entrypoint 'main' provided by 'turtletorture'
+		at net.fabricmc.loader.impl.entrypoint.EntrypointContainerImpl.getEntrypoint(EntrypointContainerImpl.java:56) ~[fabric-loader-0.13.3.jar:?]
+		at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.invoke0(EntrypointUtils.java:47) ~[fabric-loader-0.13.3.jar:?]
+		at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.invoke(EntrypointUtils.java:35) ~[fabric-loader-0.13.3.jar:?]
+		at net.fabricmc.loader.impl.game.minecraft.Hooks.startServer(Hooks.java:62) ~[fabric-loader-0.13.3.jar:?]
+		at net.minecraft.server.Main.main(Main.java:101) [server-intermediary.jar:?]
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+		at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:416) [fabric-loader-0.13.3.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:77) [fabric-loader-0.13.3.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) [fabric-loader-0.13.3.jar:?]
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+		at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:66) [fabric-loader-0.13.3.jar:?]
+	Caused by: net.fabricmc.loader.api.LanguageAdapterException: Class net.Kyhan.turtletorture.TurtleTortureServer cannot be cast to net.fabricmc.api.ModInitializer!
+		at net.fabricmc.loader.impl.util.DefaultLanguageAdapter.create(DefaultLanguageAdapter.java:63) ~[fabric-loader-0.13.3.jar:?]
+		at net.fabricmc.loader.impl.entrypoint.EntrypointStorage$NewEntry.getOrCreate(EntrypointStorage.java:117) ~[fabric-loader-0.13.3.jar:?]
+		at net.fabricmc.loader.impl.entrypoint.EntrypointContainerImpl.getEntrypoint(EntrypointContainerImpl.java:53) ~[fabric-loader-0.13.3.jar:?]
+		... 16 more
 Caused by: java.lang.NoClassDefFoundError: net/minecraft/class_5617
-	at net.Kyhan.turtletorture.TurtleTorture.onInitialize(TurtleTorture.java:28) ~[turtletorture-0.0.2-1.18.2.jar:?]
+	at net.Kyhan.turtletorture.TurtleTorture.onInitialize(TurtleTorture.java:31) ~[turtletorture-0.0.2-1.18.2.jar:?]
 	at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.invoke0(EntrypointUtils.java:47) ~[fabric-loader-0.13.3.jar:?]
 	... 15 more
 Caused by: java.lang.ClassNotFoundException: net.minecraft.class_5617
@@ -72,6 +95,6 @@ Caused by: java.lang.ClassNotFoundException: net.minecraft.class_5617
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:158) ~[fabric-loader-0.13.3.jar:?]
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
-	at net.Kyhan.turtletorture.TurtleTorture.onInitialize(TurtleTorture.java:28) ~[turtletorture-0.0.2-1.18.2.jar:?]
+	at net.Kyhan.turtletorture.TurtleTorture.onInitialize(TurtleTorture.java:31) ~[turtletorture-0.0.2-1.18.2.jar:?]
 	at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.invoke0(EntrypointUtils.java:47) ~[fabric-loader-0.13.3.jar:?]
 	... 15 more
